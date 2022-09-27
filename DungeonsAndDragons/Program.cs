@@ -14,6 +14,7 @@
 3. Stwórz histrorię paragrafową
 4. Stwórz postać
 ESC. Zakończ");
+
                 ConsoleKey choice = Console.ReadKey().Key;
 
                 switch (choice)
@@ -38,9 +39,7 @@ ESC. Zakończ");
                         break;
                     case ConsoleKey.NumPad4:
                     case ConsoleKey.D4:
-                        Console.Clear();
-                        Console.WriteLine("Tutaj kiedyś będzie można stworzyć swoją unikatową postać!");
-                        Console.ReadKey();
+                        CharacterCreator.NewCharacter();
                         break;
                     case ConsoleKey.Escape:
                         do

@@ -1,0 +1,51 @@
+{
+  "Count": 1,
+  "ListOfRaces": [
+    {
+      "Name": "Krasnolud",
+      "Description": "Krasnoluda ma szereg wrodzonych zdolności, będących nieodłączną częścią krasnoludzkiej natury.",
+      "AbilityScoreDescription": "Kondycja wzrasta o 2",
+      "AbilityScore": [
+        {
+          "Name": "Constitution",
+          "Value": 2
+        }
+      ],
+      "AgeDescription": "Krasnoludy dojrzewają w tym samym tempie co ludzie, ale są uważane za młode, dopóki nie osiągną wieku 50 lat. Średnio żyją około 350 lat.",
+      "AlignmentDescription": "Większość krasnoludów działa zgodnie z prawem, mocno wierząc w korzyści płynące z dobrze zorganizowanego społeczeństwa. Skłaniają się również do dobra, z silnym poczuciem fair play i przekonaniem, że każdy zasługuje na udział w korzyściach płynących z sprawiedliwego porządku.",
+      "SizeDescription": "Krasnoludy mają od 1,2 do 1,5 metra wzrostu i średnio około 70 kilogramów. Rozmiar to średni.",
+      "SpeedDescription": "Podstawowa prędkość chodzenia wynosi 7,5 metra. Prędkość nie jest zmniejszona przez noszenie ciężkiej zbroi.",
+      "SpeedWalk": 7.5,
+      "LanguagesDescription": "Krasnolud może mówić, czytać i pisać w języku powszechnym i krasnoludzkim. Krasnolud jest pełen twardych spółgłosek i gardłowych dźwięków, a te cechy przenoszą się na każdy inny język, jakim może mówić krasnolud.",
+      "VisionDescription": "Przyzwyczajony do życia pod ziemią, doskonale widzi w ciemności i półmroku. Możesz widzieć w przyćmionym świetle w odległości 18 metrów od siebie, jak gdyby było to jasne światło, a w ciemności, jak gdyby było to słabe światło. W ciemności nie widać koloru, tylko odcienie szarości.",
+      "Traits": "*Krasnoludzka odporność*\nPrzewaga w rzutach obronnych przeciwko truciźnie i odporność na obrażenia od trucizny.\n*Krasnoludzki trening bojowy*\nBiegłość w posługiwaniu się toporem bojowym, toporem ręcznym, lekkim młotem i młotem bojowym.\n*Biegłość w używaniu narzędzi*\nBiegłość w posługiwaniu się wybranymi przez siebie narzędziami rzemieślników: narzędziami kowalskimi, zapasami piwowara lub narzędziami murarskimi.\n*Wiedza o kamieniu*\nZa każdym razem, gdy wykonuje test Inteligencji (Historii) związany z pochodzenia kamienia, jesteś uważany za biegły w umiejętności Historia i dodaje podwójną premię biegłości do testu, zamiast normalnej premii biegłości.",
+      "SampleNamesSurnames": "Imiona męskie:\nAdrik, Alberich, Bearn, Barendd, Brottor, Bruenor, Dain, Darrak, Delg, Eberk, ... \n\nImiona żeńskie:\nAmber, Artin, Audhild, Bardryn, ...\n\nNazwiska klanowe: Balderk, Battlehammer, Brawnanvil, Dankil, Fireforge, ...",
+      "Subraces": [
+        {
+          "Name": "Krasnolud Wzgórzowy",
+          "Description": "Krasnolud wzgórzowy ma wyostrzone zmysły, głęboką intuicję i niezwykłą odporność.",
+          "AbilityScoreDescription": "Mądrość wzrasta o 1",
+          "AbilityScore": [
+            {
+              "attributes": "Wisdom",
+              "value": 1
+            }
+          ],
+          "Traits": "*Krasnoludzka wytrzymałość*\nMaksymalny punkt życia wzrasta o 1 i zwiększa się o 1 za każdym razem, gdy zdobywa poziom."
+        },
+        {
+          "Name": "Krasnolud Górski",
+          "Description": "Krasnolud górski jest silny, odporny i przyzwyczajony do trudnego życia na niegościnnym terenie.",
+          "AbilityScoreDescription": "Siła wzrasta o 2",
+          "AbilityScor": [
+            {
+              "attributes": "Strength",
+              "value": 2
+            }
+          ],
+          "Traits": "*Krasnoludzki trening zbrojny*\nBiegłość w używaniu lekkich i średnich pancerzy"
+        }
+      ]
+    }
+  ]
+}
