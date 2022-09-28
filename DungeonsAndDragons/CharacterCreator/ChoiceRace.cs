@@ -1,14 +1,14 @@
 ﻿using DungeonsAndDragons;
-using DungeonsAndDragons.ListOfRaces;
+using DungeonsAndDragons.MagazineOfLists;
 using Newtonsoft.Json;
 using System;
 using System.Diagnostics;
 
-namespace DungeonsAndDragons
+namespace DungeonsAndDragons.CharacterCreator
 {
     public class ChoiceRace
     {
-        public static int Race()
+        public static int Choice()
         {
             
             var currentDirectory = Directory.GetCurrentDirectory();
@@ -90,7 +90,7 @@ namespace DungeonsAndDragons
                             else idRace = (races.ListOfRaces.Count - 1);
                             again = false;
                             break;
-                        case ConsoleKey.Enter:
+                        case ConsoleKey.Enter:                            
                             return idRace;
                         case ConsoleKey.Escape:
                             return 999;

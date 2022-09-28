@@ -1,4 +1,6 @@
-﻿namespace DungeonsAndDragons
+﻿using DungeonsAndDragons.CharacterCreator;
+
+namespace DungeonsAndDragons
 {
     internal class Program
     {
@@ -39,7 +41,7 @@ ESC. Zakończ");
                         break;
                     case ConsoleKey.NumPad4:
                     case ConsoleKey.D4:
-                        CharacterCreator.NewCharacter();
+                        CharacterCreator.Creator.NewCharacter();
                         break;
                     case ConsoleKey.Escape:
                         do

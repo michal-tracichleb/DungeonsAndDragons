@@ -1,7 +1,8 @@
-﻿
-namespace DungeonsAndDragons
+﻿using DungeonsAndDragons.StuffToGame;
+
+namespace DungeonsAndDragons.CharacterCreator
 {
-    internal class CharacterCreator
+    internal class Creator
     {
         public static void NewCharacter()
         {
@@ -15,9 +16,9 @@ namespace DungeonsAndDragons
 
             if (choice == ConsoleKey.Escape) return;
 
-            int idRace = ChoiceRace.Race();
+            int idRace = ChoiceRace.Choice();
 
-            Console.WriteLine($"Wybrałeś {idRace}");
+            Console.WriteLine($"\nTwój wybór {idRace}");
 
             Console.ReadKey();
         }

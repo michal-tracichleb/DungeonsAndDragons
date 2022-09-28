@@ -6,7 +6,7 @@ using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
-namespace DungeonsAndDragons.ListOfRaces
+namespace DungeonsAndDragons.MagazineOfLists
 {
     internal class Races
     {
