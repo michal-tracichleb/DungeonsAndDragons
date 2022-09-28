@@ -1,4 +1,5 @@
-﻿using DungeonsAndDragons.StuffToGame;
+﻿using DungeonsAndDragons.MagazineOfLists;
+using DungeonsAndDragons.StuffToGame;
 
 namespace DungeonsAndDragons.CharacterCreator
 {
@@ -19,6 +20,8 @@ namespace DungeonsAndDragons.CharacterCreator
             int idRace = ChoiceRace.Choice();
 
             Console.WriteLine($"\nTwój wybór {idRace}");
+
+            var player = ChoiceRace.PlayerWithRace(idRace);
 
             Console.ReadKey();
         }

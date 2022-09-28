@@ -20,7 +20,7 @@ namespace DungeonsAndDragons.MagazineOfLists
         public string Name { get; set; }
         public string Description { get; set; }
         public string AbilityScoreDescription { get; set; }
-        public List<AbilityScore> AbilityScore { get; set; }
+        public List<RaceAbilityScore> AbilityScore { get; set; }
         public string AgeDescription { get; set; }
         public string AlignmentDescription { get; set; }
         public string SizeDescription { get; set; }
@@ -32,17 +32,21 @@ namespace DungeonsAndDragons.MagazineOfLists
         public string SampleNamesSurnames { get; set; }
         public List<Subraces> Subraces { get; set; }
     }
-    internal class AbilityScore
+    internal class RaceAbilityScore
     {
-        public string Name { get; set; }
-        public int Valure { get; set; }
+        public int Strength { get; set; }
+        public int Dexterity { get; set; }
+        public int Constitution { get; set; }
+        public int Intelligence { get; set; }
+        public int Wisdom { get; set; }
+        public int Charisma { get; set; }
     }
     internal class Subraces
     {
         public string Name { get; set; }
         public string Description { get; set; }
         public string AbilityScoreDescription { get; set; }
-        public List<AbilityScore> AbilityScore { get; set; }
+        public List<RaceAbilityScore> AbilityScore { get; set; }
         public string Traits { get; set; }
     }
 }

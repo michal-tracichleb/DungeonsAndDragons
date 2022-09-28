@@ -7,8 +7,17 @@
       "AbilityScoreDescription": "Kondycja wzrasta o 2",
       "AbilityScore": [
         {
-          "Name": "Constitution",
-          "Value": 2
+          "Wisdom": 0,
+
+          "Strength": 0,
+
+          "Dexterity": 0,
+
+          "Constitution": 2,
+
+          "Intelligence": 0,
+
+          "Charisma": 0
         }
       ],
       "AgeDescription": "Krasnoludy dojrzewają w tym samym tempie co ludzie, ale są uważane za młode, dopóki nie osiągną wieku 50 lat. Średnio żyją około 350 lat.",
@@ -27,8 +36,17 @@
           "AbilityScoreDescription": "Mądrość wzrasta o 1",
           "AbilityScore": [
             {
-              "attributes": "Wisdom",
-              "value": 1
+              "Wisdom": 1,
+              
+              "Strength": 0,
+              
+              "Dexterity": 0,
+              
+              "Constitution": 0,
+              
+              "Intelligence": 0,
+              
+              "Charisma": 0
             }
           ],
           "Traits": "*Krasnoludzka wytrzymałość*\nMaksymalny punkt życia wzrasta o 1 i zwiększa się o 1 za każdym razem, gdy zdobywa poziom."
@@ -39,8 +57,17 @@
           "AbilityScoreDescription": "Siła wzrasta o 2",
           "AbilityScor": [
             {
-              "attributes": "Strength",
-              "value": 2
+              "Wisdom": 0,
+
+              "Strength": 2,
+
+              "Dexterity": 0,
+
+              "Constitution": 0,
+
+              "Intelligence": 0,
+
+              "Charisma": 0
             }
           ],
           "Traits": "*Krasnoludzki trening zbrojny*\nBiegłość w używaniu lekkich i średnich pancerzy"

@@ -3,6 +3,8 @@ using DungeonsAndDragons.MagazineOfLists;
 using Newtonsoft.Json;
 using System;
 using System.Diagnostics;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters;
 
 namespace DungeonsAndDragons.CharacterCreator
 {
@@ -10,7 +12,7 @@ namespace DungeonsAndDragons.CharacterCreator
     {
         public static int Choice()
         {
-            
+
             var currentDirectory = Directory.GetCurrentDirectory();
             var racesSerializedPath = Path.Combine(currentDirectory, "data", "racesPL.json");
             string racesSerialized = File.ReadAllText(racesSerializedPath);
@@ -90,7 +92,7 @@ namespace DungeonsAndDragons.CharacterCreator
                             else idRace = (races.ListOfRaces.Count - 1);
                             again = false;
                             break;
-                        case ConsoleKey.Enter:                            
+                        case ConsoleKey.Enter:
                             return idRace;
                         case ConsoleKey.Escape:
                             return 999;
@@ -101,8 +103,34 @@ namespace DungeonsAndDragons.CharacterCreator
                             again = true;
                             break;
                     }
-                }while (again);
+                } while (again);
             } while (true);
         }
+
+        public static object PlayerWithRace(int idRace)
+        {
+            var currentDirectory = Directory.GetCurrentDirectory();
+            var racesSerializedPath = Path.Combine(currentDirectory, "data", "racesPL.json");
+            string racesSerialized = File.ReadAllText(racesSerializedPath);
+            Races races = JsonConvert.DeserializeObject<Races>(racesSerialized);
+
+            var player = new ListOfCharacters()
+            {
+                NameOfRace = races.ListOfRaces[idRace].Name,
+
+                AbilityScore = new AbilityScores()
+                {
+                    //if (races.ListOfRaces[idRace].AbilityScore[0].Name == "Charisma")
+                    Charisma = races.ListOfRaces[idRace].AbilityScore[0].Charisma,
+                    Constitution = races.ListOfRaces[idRace].AbilityScore[0].Constitution,
+                    Dexterity = races.ListOfRaces[idRace].AbilityScore[0].Dexterity,
+                    Intelligence = races.ListOfRaces[idRace].AbilityScore[0].Intelligence,
+                    Strength = races.ListOfRaces[idRace].AbilityScore[0].Strength,
+                    Wisdom = races.ListOfRaces[idRace].AbilityScore[0].Wisdom
+                }
+            };
+            return player;
+        }
+
     }
 }

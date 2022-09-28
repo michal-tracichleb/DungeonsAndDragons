@@ -7,18 +7,18 @@ using System.Threading.Tasks;
 
 namespace DungeonsAndDragons.MagazineOfLists
 {
-    internal class ListOfCharacters
+    internal class Characters
     {
-        public int Count { get { return Characters.Count(); } }
+        public int Count { get { return Character.Count(); } }
 
         [JsonPropertyName("ListOfRaces")]
-        public List<Character> Characters { get; set; }
+        public List<ListOfCharacters> Character { get; set; }
     }
 
-    internal class Character
+    internal class ListOfCharacters
     {
-        public string Race { get; set; }
-        public NameAndSurname NameAndSurname { get; set; }
+        public string NameOfRace { get; set; }
+        public List<NameAndSurname> NameAndSurname { get; set; }
         public double Size { get; set; }
         public double Age { get; set; }
         public string DesriptionAppearance { get; set; }
